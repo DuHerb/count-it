@@ -28,5 +28,31 @@
       </div>
       <h1 id="puzzleOutPut"></h1>
     </section>
+    <div class="container">
+      <h1>Transportation Quiz</h1>
+      <h3>Check all that you have used to get to work:</h3>
+      <form id="transportationQuiz">
+        <div class="form-group">
+          <input type="checkbox" name="work" value="bike">Ride a bike<br>
+          <input type="checkbox" name="work" value="car">Drive a car<br>
+          <input type="checkbox" name="work" value="rideShare">Ride Share<br>
+          <input type="checkbox" name="work" value="streetCar">Street Car<br>
+          <input type="checkbox" name="work" value="jetPack">Jet Pack<br>
+        </div>
+        <div class="form-group">
+          <h3>Check all that you use to go to not work</h3>
+          <input type="checkbox" name="notWork" value="bike">Ride a bike<br>
+          <input type="checkbox" name="notWork" value="car">Drive a car<br>
+          <input type="checkbox" name="notWork" value="rideShare">Ride Share<br>
+          <input type="checkbox" name="notWork" value="streetCar">Street Car<br>
+          <input type="checkbox" name="notWork" value="jetPack">Jet Pack<br>
+        </div>
+        <button id="quizSubmit" type="button">Submit Quiz</button>
+      </form>
+      <div>
+        <ul id="quizResults">
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

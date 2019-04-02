@@ -29,15 +29,28 @@ function deVowel(list){
     };
   });
   return list;
-};
-var testArray = ['t','g','a','b','e'];
-console.log(deVowel(testArray));
+  };
+  var testArray = ['t','g','a','b','e'];
+  console.log(deVowel(testArray));
 
   $('#puzzleSubmit').click(function() {
     var userInput = $('#puzzleInput').val();
     var inputSplit = userInput.split('');
     console.log(inputSplit);
     $('#puzzleOutPut').append(deVowel(inputSplit));
-
   })
-})
+//Start of TransportationQuiz
+  $("#quizSubmit").click(function() {
+    $("input:checkbox[name=work]:checked").each(function(){
+      var workMode = $(this).val();
+      $("#quizResults").append("<li>" + workMode + "</li>");
+      $("#quizResults").append("<br>");
+    });
+    $("input:checkbox[name=notWork]:checked").each(function(){
+      var notWorkMode = $(this).val();
+      $("#quizResults").append("<li>" + notWorkMode + "</li>");
+    });
+    $("form").hide();
+
+  });
+});
