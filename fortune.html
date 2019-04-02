@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <title>Fortune Teller</title>
+</head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Get Your Fortunes Here</h1>
+        <h4>Is Fame and Fortune around the corner?</h4>
+      </div>
+      <form>
+        <div class="form-group">
+          <p>In the past month, check all that you have expierenced:</p>
+          <input type="checkbox" name="fortune" value="-1">Seeing a black cat<br>
+          <input type="checkbox" name="fortune" value="1">Finding something of value<br>
+          <input type="checkbox" name="fortune" value="-1">Tipping over a salt shaker<br>
+          <input type="checkbox" name="fortune" value="-1">Tripped on a Rainbow<br>
+          <input type="checkbox" name="fortune" value="1">Found a Face up Penny<br>
+          <input type="checkbox" name="fortune" value="1">Accidently Stomped on a Fairy<br>
+          <input id="gizmo" type="checkbox" name="fortune" value="0">Adopted a Gizmo<br>
+          <input type="checkbox" name="fortune" value="1">Bought a bag of all red skittles<br>
+          <input type="checkbox" name="fortune" value="-1">Steped on a crack<br>
+          <input type="checkbox" name="fortune" value="-1">Asked for a Coke, got a Pepsi<br>
+          <input type="checkbox" name="fortune" value="1">Have a rich uncle<br>
+          <input type="checkbox" name="fortune" value="-1">Rich Uncle married a 24 year old named Cinnamon and left her all his money<br>
+        </div>
+        <button id="fortuneSubmit" type="button" class="btn-success">Submit to fate</button>
+      </form>
+      <p id="fortuneOutput"></p>
+    </div>
+  </body>
+</html>
