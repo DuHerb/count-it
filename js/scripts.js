@@ -84,4 +84,62 @@ function deVowel(list){
     };
   };
   });
+
+  // var userInput = [2,3,4,5,6,7,8,9,10,11];
+  // var prime = 2;
+  // var primeNumbers = [];
+  // var counter = userInput.length;
+  //
+  // for (var j = 2; j <= counter-1; j++){
+  //   i = 0;
+  //   for (var i = 0; i < counter; i++) {
+  //     if (Math.floor(array[i] % prime) === (array[i] % prime)){
+  //       // primeNumbers.push(userInput[i]);
+  //       userInput.splice(counter,1);
+  //       counter--;
+  //       console.log(userInput);
+  //     }
+  //
+  //   };
+  //
+  // }
+
+  // var prime = 2;
+  // var input = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
+  // var primeArray = siev(input);
+  // console.log(primeArray);
+  //
+  // function siev(array) {
+  //   if (prime > array.length) {
+  //     return array;
+  //   } else {
+  //     for (var i = 0; i < array.length-1; i++) {
+  //       if(array[i] % prime === 0 && Math.floor(array[i] % prime) === (array[i] % prime)) {
+  //         array.splice(i,1);
+  //       };
+  //     };
+  //     prime++;
+  //     return siev(array);
+  //   }
+  // }
+
+  var prime = 2;
+  var input = [2,3,4,5,6,7,8,9,10,11,12,13];
+
+  function siev(input){
+    if (prime >= input.length){
+      return input.filter(input => typeof input === 'number');
+    }
+    for (var i = 0; i<input.length; i = i + prime){
+      if(typeof input[i] === "number") {
+        input[i].toString();
+        console.log(input[i]);
+      }
+      prime++;
+      return siev(input);
+    }
+
+  }
+  console.log(siev(input));
+
 });
