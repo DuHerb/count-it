@@ -9,10 +9,12 @@ $(document).ready(function()  {
   })
   function countIt(countTo,countBy){
     var outputCount = [];
-    for (i = countBy; i <= countTo; i+= countBy){
+    if(countBy <= countTo && countBy > 0 && countTo > 0){
+      for (i = countBy; i <= countTo; i+= countBy){
       outputCount.push(i);
       console.log(outputCount);
-    };
-    return outputCount;
+      };
+      return outputCount;
+    }else{alert("Numbers must be greater than 0, and Count To must be larger than Count By.")}
   };
 })
